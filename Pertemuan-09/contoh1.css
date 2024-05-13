@@ -1,0 +1,37 @@
+/*
+div{
+    height: 100px;
+    width: 90%;
+    font-size: 100%;
+
+    line-height: 100px;
+    text-align: center;
+
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+*/
+div.container{
+    background-color: red;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+div.container::before,div.container::after{
+    content: "";
+    display: table;
+}
+div.container::after{
+    clear: both;
+}
+div.box{
+    float: right;
+    background-color: blue;
+    width: 300px;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
