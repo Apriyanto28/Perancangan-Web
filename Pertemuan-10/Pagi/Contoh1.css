@@ -1,0 +1,33 @@
+.container{
+    /*width: 1024px;*/
+    width: 80%;
+    margin: 0 auto;
+    background-color: red;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+/*
+.container::after,
+.container::before{
+    content: "";
+    display: table;
+}
+.container::after{
+    clear: both;
+}
+*/
+@media screen and (min-width: 480px){
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+}
+.box{
+    width: 30%;
+    background-color: blue;
+    margin: 10px;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
