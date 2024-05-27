@@ -1,0 +1,17 @@
+ul li{
+    list-style-type: none;
+
+    margin: 5px;
+    padding: 10px;
+    width: 100px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+
+    background-color: green;
+    color: white;
+}
+
+ul.horizon li{
+    display: inline;
+}
