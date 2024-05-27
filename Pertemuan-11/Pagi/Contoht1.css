@@ -1,0 +1,26 @@
+ul{
+    padding: 0;
+    margin: 0;
+
+    
+}
+ul li{
+    display: inline;
+
+    list-style-type: none;
+    padding: 10px;
+    margin-right: 5px;
+    width: 100px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+
+    background-color: black;
+    color: white;
+}
+
+
+ul li:hover{
+    background-color: pink;
+    color: green;
+}
