@@ -1,7 +1,6 @@
 div.container{
     width: 960px;
     margin: 0 auto;
-    background-color: black;
 }
 div.row::after,
 div.row::before{
@@ -12,8 +11,6 @@ div.row::after{
     clear: both;
 }
 div.col{
-    background-color: gray;
-    color: white;
     height: 40px;
     line-height: 40px;
     text-align: center;
