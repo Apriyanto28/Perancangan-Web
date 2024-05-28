@@ -1,0 +1,12 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    margin: 10px;
+
+    transition: width 5s, background-color 5s;
+}
+div:active{
+    width: 500px;
+    background-color: red;
+}

@@ -1,0 +1,57 @@
+div{
+    width: 100px;
+    height: 100px;
+
+    text-align: center;
+    line-height: 100px;
+
+    color: white;
+
+    position: relative;
+
+    /*
+    background-color: purple;
+    */
+
+    margin: 10px;
+
+    animation-name: AnimasiKu;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.box1{
+    animation-timing-function: ease;
+}
+
+.box2{
+    animation-timing-function: linear;
+}
+
+.box3{
+    animation-timing-function: ease-in;
+}
+
+.box4{
+    animation-timing-function: ease-out;
+}
+
+/*
+@keyframes AnimasiKu {
+    from {left: 0px;}
+    to {left: 500px;}
+}
+*/
+@keyframes AnimasiKu {
+    0% {
+        background-color: purple;
+        left: 0px;
+    }
+    50%{
+        background-color: red;
+    }
+    100% {
+        background-color: blue;
+        left: 800px;
+    }
+}
