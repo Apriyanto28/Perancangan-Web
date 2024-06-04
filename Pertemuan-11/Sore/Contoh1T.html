@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul.kedua li{
+            float: left;
+            list-style-type: none;
+            width: 100px;
+            height: 50px;
+            background-color: yellow;
+            border: 1px solid grey;
+            text-align: center;
+            line-height: 50px;
+            padding: 0;
+        }
+        ul.kedua li:hover{
+            background-color: black;
+            color: white;
+        }
+        ul.kedua li:hover>ul{
+            display: block;
+        }
+        ul.kedua li a{
+            text-decoration: none;
+            color: green;
+        }
+        /*
+        ul.kedua li a:hover{
+            color: white !important;
+        }
+        */
+        ul.kedua li ul{
+            margin: 0;
+            display: none;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>List-1</li>
+        <li>List-2</li>
+        <li>List-3</li>
+        <li>List-4</li>
+        <li>List-5</li>
+    </ul>
+    <ul class="kedua">
+        <li><a href="#">Home</a></li>
+        <li>
+            <a href="#">Profile</a>
+            <ul>
+                <li><a href="#">Menu-1</a></li>
+                <li><a href="#">Menu-2</a></li>
+                <li><a href="#">Menu-3</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Data</a></li>
+    </ul>
+</body>
+</html>
