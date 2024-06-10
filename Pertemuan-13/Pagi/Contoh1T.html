@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            line-height: 100px;
+            text-align: center;
+            background-color: green;
+            color: yellow;
+            margin-bottom: 5px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+    </div>
+    <div id="box">
+    </div>
+    <div id="box">
+    </div>
+    <div id="box">
+    </div>
+    <div id="box">
+    </div>
+    <div id="box">
+    </div>
+    <div id="box">
+    </div>
+
+    <script>
+        //document.getElementById("box").innerText = "Teks";
+        var a = document.querySelectorAll("#box");
+        for(let i =0;i<a.length;i++){
+            a[i].style.backgroundColor = "blue";
+            if((i+1) % 2 == 0){
+                a[i].innerHTML = "<p>Ini teks saya </p>";
+            }
+        }
+    </script>
+</body>
+</html>
