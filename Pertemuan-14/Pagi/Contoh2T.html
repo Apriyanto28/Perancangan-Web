@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <button id="tombol">
+        Apa ya???
+    </button>
+    <p id="hasil">
+
+    </p>
+    <script>
+        var tmbl = document.getElementById("tombol");
+        var hsl = document.getElementById("hasil");
+
+        function apri(){
+            hsl.textContent = "Tombol telah diklik";
+        }
+
+        tmbl.addEventListener("click", apri);
+    </script>
+</body>
+</html>
