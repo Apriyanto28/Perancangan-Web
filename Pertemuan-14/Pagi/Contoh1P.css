@@ -1,0 +1,17 @@
+tr td{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+}
+tr td input,
+tr td select{
+    width: 100%;
+    height: 65%;
+    line-height: 65%;
+    text-align: center;
+    font-size: 15px;
+}
+tr:nth-child(4) td{
+    text-align: center;
+}

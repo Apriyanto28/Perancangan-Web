@@ -3,34 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="./Contoh1P.css">
+    <script src="./Contoh1P.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <h1>Produk Baru PT. ABC</h1>
-    <h3>Form Pendaftaran</h3>
-        <table class="form">
+    <h1>Form Pendataan Produk</h1>
+    <h3>PT. ABC</h3>
+    <form name="formSaya" action="#" onsubmit="return validasi();">
+        <table>
             <tr>
-                <td>Nama:</td>
-                <td><input type="text" id="nama"></td>
-            </tr>
-            <tr>
-                <td>Email:</td>
-                <td><input type="email" id="email"></td>
-            </tr>
-            <tr>
-                <td>Password:</td>
-                <td><input type="password" id="password"></td>
-            </tr>
-            <tr>
-                <td></td>
                 <td>
-                    <button id="tombol" onclick="validasi()">
-                        Daftar
+                    <label for="nama">Nama Produk</label>
+                </td>
+                <td>
+                    <input type="text" name="nama">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="jumlah">Jumlah Produk</label>
+                </td>
+                <td>
+                    <input type="number" name="jumlah">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="satuan">Satuan</label>
+                </td>
+                <td>
+                    <select name="satuan">
+                        <option value="kg">Kilogram</option>
+                        <option value="bh">Buah</option>
+                        <option value="bj">Biji</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">
+                        Simpan Data
+                    </button>
+                </td>
+                <td>
+                    <button type="reset">
+                        Bersihkan Data
                     </button>
                 </td>
             </tr>
         </table>
-    <script src="./Contoh1P.js"></script>
+    </form>
 </body>
 </html>
