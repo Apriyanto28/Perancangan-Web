@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pilih Browser Anda:</h1>
+    <select name="browser" id="browser" onchange="Perubahan()">
+        <option value="ie">Internet Explorer</option>
+        <option value="gc">Google Chrome</option>
+        <option value="ff">Mozila Firefox</option>
+    </select>
+    <br>
+    <img src="./ie.png" alt="Browser" id="gambar">
+    <p id="hasil">Internet Explorer</p>
+
+    <script>
+        function Perubahan(){
+            var pilihan = document.getElementById("browser").value;
+            var gambar = document.getElementById("gambar");
+            var hasil = document.getElementById("hasil");
+            
+            if(pilihan == "ie"){
+                gambar.src = "./ie.png";
+                hasil.innerText = "Internet Explorer";
+            } else if(pilihan == "gc"){
+                gambar.src = "./gc.png";
+                hasil.innerText = "Google Chrome";
+            } else{
+                gambar.src = "./ff.png";
+                hasil.innerText = "Mozila Firefox";
+            }
+        }
+    </script>
+</body>
+</html>
