@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery-3.7.1.min.js"></script>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+
+            background: black;
+            color: white;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Praktek P13
+    </div>
+    <div>
+        Praktek P14
+    </div>
+    <div>
+        Praktek P15
+    </div>
+    <script>
+        $("div").addClass("box");
+        $("div").on("click",function(){
+            let tmp = $("div").text();
+            alert(tmp);
+        });
+    </script>
+</body>
+</html>

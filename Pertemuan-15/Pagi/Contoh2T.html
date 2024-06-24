@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>jQuery Example: Button Click</h1>
+    
+    <button id="changeTextBtn">Change Text</button>
+    <p id="textToChange">Hello, jQuery!</p>
+
+    <script>
+        // Ketika dokumen telah dimuat, jQuery siap untuk digunakan
+        $(document).ready(function(){
+            // Ketika tombol dengan id "changeTextBtn" ditekan
+            $('#changeTextBtn').click(function(){
+                // Mengubah teks dalam elemen dengan id "textToChange"
+                $('#textToChange').text('Text changed using jQuery!');
+            });
+        });
+    </script>
+</body>
+</html>
